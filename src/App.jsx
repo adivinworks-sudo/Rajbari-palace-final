@@ -102,7 +102,7 @@ export default function App() {
   useEffect(() => {
     const params = new URLSearchParams(window.location.search)
     if (params.get('booking') === 'success') {
-      setBookingConfirmed(true)
+      setTimeout(() => setBookingConfirmed(true), 0)
       // Clean up the URL without reload
       window.history.replaceState({}, '', window.location.pathname)
     }
@@ -110,10 +110,7 @@ export default function App() {
 
   // 4. Booking search is now handled by the external portal redirect
 
-  // Handle "Book This Room" button click
-  const scrollToBooking = () => {
-    bookingSectionRef.current?.scrollIntoView({ behavior: 'smooth' });
-  }
+
 
   return (
     <>
