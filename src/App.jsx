@@ -1,6 +1,4 @@
 import { useState, useEffect, useRef } from 'react'
-import BookingWidget from './BookingWidget'
-
 // --- Showcase Data Setup ---
 // These are used purely for the visual showcase and gallery modals.
 // Actual booking inventory, pricing, and availability are handled entirely by the official booking portal.
